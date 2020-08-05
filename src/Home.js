@@ -26,21 +26,21 @@ function Home() {
             </div>
             <div className="home__row">
                 <Product 
-                    id="1334234"
+                    id="1334844234"
                     title="The Wonders"
                     price={55.99}
                     rating={5}
                     image="https://m.media-amazon.com/images/I/51x-D-RBFML._AC_SY240_.jpg"
                 />
                 <Product 
-                    id="1334234"
+                    id="133492534"
                     title="Able Bodied Persons"
                     price={19.99}
                     rating={5}
                     image="https://images-na.ssl-images-amazon.com/images/G/01/img18/home/journeys/NTJmNGQ1ODkt/NTJmNGQ1ODkt-MGI2ZTY1MWUt-w379._SY304_CB409683041_.jpg"
                 />
                 <Product 
-                    id="1334234"
+                    id="133064234"
                     title="Creativity"
                     price={29.99}
                     rating={5}
@@ -49,7 +49,7 @@ function Home() {
             </div>
             <div className="home__row">
                 <Product 
-                    id="1334234"
+                    id="137344234"
                     title="Addidddasss"
                     price={299.99}
                     rating={5}

@@ -3,9 +3,17 @@ import './Header.css';
 import { Link } from "react-router-dom";
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
+import { useStateValue } from './StateProvider'; //import from stateprovider recuder
+
+
 //rfce => tab = all this
 
 function Header() {
+    //basically it's this
+    //const [state, dispatch] = useStateValue();
+    const [{basket}] = useStateValue();
+    console.log(basket)
+
     return (
         <nav className="header">
             {/* logo on the left || this creates links on items */}
@@ -49,7 +57,7 @@ function Header() {
                 <Link to="/checkout" className="header__link">
                     <div className="header__optionsBasket">
                         <ShoppingBasketIcon />
-                        <span>0</span>
+                        <span>{basket.length}</span>
                     </div>
                 </Link>
             </div>

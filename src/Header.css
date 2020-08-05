@@ -51,6 +51,7 @@
 .header__optionsBasket {
     display: flex;
     align-items: center;
+    margin-right: 5px;
 }
 .header__optionLineOne {
     font-size: 10px;
