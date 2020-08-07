@@ -19,6 +19,7 @@
 
 .product__rating {
     display: flex;
+    justify-content: center;
 }
 .product > img {
     max-height: 200px;
@@ -36,5 +37,7 @@
     background-color: #f0c14b;
     border: 1px solid;
     border-color: #a88734 #9c7e31 #846a29;
-    
+    max-width: 100px;
+    padding: 0 5px;
+    align-self: center;
 }

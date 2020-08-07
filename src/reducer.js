@@ -2,7 +2,15 @@
 //inside our store (initialstate) we have a basket represented as an array
 
 export const initialState = {
-    basket: [],
+    basket: [
+        {
+            id: '3124124',
+            title: 'Cool new thing you should buy',
+            price: 59.99,
+            rating: 3,
+            image: 'https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2020/journeys/NTE3Zjc1NTEt/NTE3Zjc1NTEt-MzBhMzU0M2Mt-w186._SY116_CB428347144_.jpg',
+        },
+    ],
     user: null,
 }
 

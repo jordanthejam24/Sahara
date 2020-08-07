@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+
+.checkout {
+    /* margin-top: 100px; */
+}
+.checkout__ad {
+
+}

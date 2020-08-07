@@ -3,23 +3,27 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
+import Checkout from './Checkout';
+import CheckoutProduct from './CheckoutProduct';
+
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Switch>
-        {/* for dynamic <Route path="/checkout/:someId">  */}
-        {/* Router is the parent route  */}
-        <Route path="/">
-            <Header /> {/* this is where we import at the top from Header */}
-            <Home />
-          </Route>
+          {/* for dynamic <Route path="/checkout/:someId">  */}
+          {/* Router is the parent route  */}
+          
+
           <Route path="/checkout">
             <Header />
-            <h1>Checkout</h1>
+            <Checkout />
           </Route>
-
+          <Route path="/orders">
+            <Header />
+            <h1>Order page</h1>
+          </Route>
           <Route path="/login">
             <Header />
             <h1>Login page</h1>
@@ -29,21 +33,13 @@ function App() {
             <Header />
             <h1>Prime page</h1>
           </Route>
+          <Route path="/">
+            <Header /> {/* this is where we import at the top from Header */}
+            <Home />
+          </Route>
         </Switch>
         
       </div>
-        {
-          /* React Router  */
-        }
-        
-        {
-          /* Something  */
-        }
-        {
-          /* Something  */
-        }
-
-      
     </Router>
   );
 }
