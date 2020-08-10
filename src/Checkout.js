@@ -24,7 +24,7 @@ function Checkout() {
                 {basket.map(item => (
                     <CheckoutProduct 
                         id={item.id}
-                        title={item.id}
+                        title={item.title}
                         price={item.price}
                         rating={item.rating}
                         image={item.image}
