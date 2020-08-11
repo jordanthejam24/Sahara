@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import Checkout from './Checkout';
-import CheckoutProduct from './CheckoutProduct';
-
+// import Subtotal from './Subtotal';
 
 function App() {
   return (
