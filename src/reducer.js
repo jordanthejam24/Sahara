@@ -3,16 +3,13 @@
 
 export const initialState = {
     basket: [
-        {
-            id: '3124124',
-            title: 'Cool new thing you should buy',
-            price: 59.99,
-            rating: 3,
-            image: 'https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2020/journeys/NTE3Zjc1NTEt/NTE3Zjc1NTEt-MzBhMzU0M2Mt-w186._SY116_CB428347144_.jpg',
-        },
+        
     ],
     user: null,
 }
+//selector example: incrimenting all prices inside of basket, starting at 0 and return that value
+export const getBasketTotal = (basket) => basket?.reduce((amount, item) => item.price + amount, 0);
+
 
 // reducer example. manipulate data with actions
 //mutible updates
