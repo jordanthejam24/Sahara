@@ -4,9 +4,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import Checkout from './Checkout';
+import Login from './Login';
 // import Subtotal from './Subtotal';
 
 function App() {
+  
+
   return (
     <Router>
       <div className="App">
@@ -24,8 +27,8 @@ function App() {
             <h1>Order page</h1>
           </Route>
           <Route path="/login">
-            <Header />
-            <h1>Login page</h1>
+            
+            <Login />
           </Route>
           <Route path="/prime">
           {/* putting header tag basically uses header page on other pages */}

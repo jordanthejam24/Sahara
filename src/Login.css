@@ -1,0 +1,40 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.login__logo {
+    width: 100px;
+    margin: 10px 20px 0 20px;
+    cursor: pointer;
+    object-fit: contain;
+}
+.login__container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3PX;
+    align-content: left;
+    justify-content: flex-start;
+}
+
+.login__container > form > h5 {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: white;
+    width: 98%;
+}
+
+.login__signIn {
+    background-color: #f0c14b;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    max-width: 100px;
+    padding: 0 5px;
+    align-self: center;
+}
