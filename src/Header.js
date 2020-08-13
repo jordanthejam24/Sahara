@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import { useStateValue } from './StateProvider'; //import from stateprovider recuder
+import { auth } from './firebase';
 
 
 //rfce => tab = all this
@@ -11,9 +12,13 @@ import { useStateValue } from './StateProvider'; //import from stateprovider rec
 function Header() {
     //basically it's this
     //const [state, dispatch] = useStateValue();
-    const [{basket}] = useStateValue();
-    console.log(basket)
-
+    const [{basket, user}] = useStateValue();
+    // console.log(basket)
+    const login = () => {
+        if(user) {
+            auth.signOut();
+        }
+    }
     return (
         <nav className="header">
             {/* logo on the left || this creates links on items */}
@@ -37,10 +42,11 @@ function Header() {
             </div>
             {/* 3 links sign in orders prime || href causes relog*/}
             <div className="header__nav">
-                <Link to="/login" className="header__link">
-                    <div className="header__option">
-                        <span className="header__optionLineOne">Hello Jordan</span>
-                        <span className="header__optionLineTwo">Sign In</span>
+            {/* link addition checks to see if user is logged in */}
+                <Link to={!user && "/login"} className="header__link">
+                    <div onClick={login} className="header__option">
+                        <span className="header__optionLineOne">Hello { user?.email }</span>
+                        <span className="header__optionLineTwo">{user ? 'Sign Out' : 'Sign In'}</span>
                     </div>
                 </Link>
                 <Link to="/orders" className="header__link">
