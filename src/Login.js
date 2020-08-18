@@ -40,7 +40,7 @@ function Login() {
                     <input value={email} onChange={event => setEmail(event.target.value)} type="email" className="login__email"/>
                     <h5>Password</h5>
                     <input value={password} onChange={event => setPassword(event.target.value)} type="password" className="login__password"/>
-                    <button onClick={login} type="submit" className="login__signIn">Sign In</button>
+                    <button onClick={login} type="submit" className="btn-amz">Sign In</button>
                 </form>
                 <p>By continuing, you agree to Sahara's Conditions of Use and Privacy Notice</p>
                 <a href="/help">Need help?</a>

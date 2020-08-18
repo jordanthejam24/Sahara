@@ -19,12 +19,3 @@
 .subtotal__gift > input {
     margin-right: 5px;
 }
-
-.subtotal > button {
-    background-color: #f0c14b;
-    border: 1px solid;
-    border-color: #a88734 #9c7e31 #846a29;
-    width: 100%;
-    padding: 0 5px;
-    align-self: center;
-}

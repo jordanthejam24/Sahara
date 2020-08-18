@@ -20,9 +20,6 @@
 }
 
 .checkoutProduct__info > button {
-    background-color: #f0c14b;
-    border: 1px solid;
-    border-color: #a88734 #9c7e31 #846a29;
     max-width: 100px;
     min-width: 140px;
     padding: 0 5px;

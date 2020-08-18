@@ -28,7 +28,7 @@ function CheckoutProduct({id, title, image, price, rating}) {
                         ))
                     }
                 </div>
-                <button onClick={removeFromBasket}>Remove From Basket</button>
+                <button className="btn-amz" onClick={removeFromBasket}>Remove From Basket</button>
             </div>
         </div>
         //could add a "buy it again" section

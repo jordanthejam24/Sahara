@@ -7,6 +7,7 @@ import Checkout from './Checkout';
 import Login from './Login';
 import { useStateValue } from './StateProvider';
 import {auth} from './firebase';
+import Footer from './Footer';
 
 function App() {
   const [{user}, dispatch] = useStateValue();
@@ -49,10 +50,12 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+            <Footer />
           </Route>
           <Route path="/orders">
             <Header />
             <h1>Order page</h1>
+            <Footer />
           </Route>
           <Route path="/login">
             
@@ -62,10 +65,12 @@ function App() {
           {/* putting header tag basically uses header page on other pages */}
             <Header />
             <h1>Prime page</h1>
+            <Footer />
           </Route>
           <Route path="/">
             <Header /> {/* this is where we import at the top from Header */}
             <Home />
+            <Footer />
           </Route>
         </Switch>
         

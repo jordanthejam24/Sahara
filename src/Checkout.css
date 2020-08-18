@@ -12,6 +12,7 @@
     background-color: white;
     height: max-content;
     padding: 10px;
+    height: 95vh;
 }
 .checkout__left {
     flex: 4;

@@ -28,7 +28,7 @@ function Subtotal() {
                 prefix={'$'}
             />
 
-            <button>Proceed to Checkout</button>
+            <button className="btn-amz">Proceed to Checkout</button>
         </div>
     )
 }

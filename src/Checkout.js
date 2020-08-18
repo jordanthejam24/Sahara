@@ -16,7 +16,7 @@ function Checkout() {
         {/* Ternary operator to display basket items (comps) */}
                 { basket?.length === 0 ? (
                     <div>
-                        <h2>Shopping Basket is empty bruh</h2>
+                        <h2>Shopping Basket is empty.</h2>
                     </div>
                 ) : (
                 <div>
